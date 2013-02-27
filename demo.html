@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Background Cover Demo</title>
+	<style>
+
+	html, body, div
+	{
+		margin: 0;
+		padding: 0; 
+	}
+
+	html, body {
+		height: 100%;
+	}
+	
+	.container {	
+		/* Demo Styles */
+		width: 50%;
+		height: 300px;
+		margin: 20px auto;
+		border: 3px solid black;
+	}
+	
+	</style>
+</head>
+<body>
+	<img src="http://lorempixel.com/900/900/sports/5" width="900" height="900" class="backgroundCover" />
+	
+	<div class="container">
+		<img src="http://lorempixel.com/900/600/people/4" width="900" height="600" class="backgroundCover" />
+	</div>
+		
+	</article>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="jquery.backgroundcover.js"></script>
+	<!-- DEMO SCRIPT -->
+	<script>
+		$(function() {
+			backgroundCover(".backgroundCover");
+		});
+	</script>
+</body>
+</html>
