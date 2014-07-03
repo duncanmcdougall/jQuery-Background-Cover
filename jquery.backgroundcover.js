@@ -69,7 +69,7 @@
         }
 
         cover();
-        $(window).resize(function () {
+        $(window).on('resize orientationchange', function () {
             cover();
         });
 
